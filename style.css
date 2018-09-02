@@ -1,0 +1,161 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    min-width: 300px;
+}
+
+.loading_icon {
+    background: rgb(226,226,226,0.6) url(http://www.thepaulbangalore.in/languages/css/loader.gif) center/50px 50px no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.progress_bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background-color: rgb(226,226,226,0.6);
+}
+.progress_bar progress{
+    position: relative;
+    top: 30%;
+    width: 80%;
+    left: 10%;
+}
+
+.progress_bar span{
+    position: relative;
+    top: 30%;
+    width: 80%;
+    left: 10%;
+}
+
+.main_header {
+    position: relative;
+    font-size: x-large;
+    line-height: 40px;
+    padding: 15px 15px 15px 2%;
+    color: #000;
+    border-radius: 0 0 10px 10px;
+    background: ivory right center/auto no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, rgba(245,222,80,1), rgba(0,0,0,0)), url(http://www.delabahia.com.ar/wp-content/uploads/2017/12/Las-26-mejores-series-de-los-ultimos-26-anos-segun-IMDB_reference.jpg);
+}
+
+.main_footer {
+    font-weight: 600;
+    padding: 15px 15px 15px 2%;
+    color: #355681;
+    background-color: #000;
+    color: #fff;
+}
+.main_footer img {
+    padding-right: 5px;
+}
+
+.main_content {
+    position: relative;
+    min-height: 300px;
+}
+
+.main_search_bar {
+    margin: 60px auto;
+    width: 50%;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.movie_item {
+    padding: 30px 2%;
+}
+.movie_item:nth-child(even) {
+    background-color: #f8f8f8;
+}
+.movie_title {
+    padding-bottom: 5px;
+}
+.movie_genre {
+    font-size: small;
+    color: #a9a9a9;
+}
+
+.main_actions {
+    padding: 0 2%;
+}
+.main_actions .sort_action {
+    padding: 0 10px 20px 0;
+    display: inline-block;
+}
+.main_actions .filter_action {
+    display: inline-block;
+    padding: 0 0 10px 79px;
+}
+.main_actions > .filter_action > div {
+    margin-left: -77px;
+    display: inline-block;
+}
+.main_actions .sort_action select {
+    padding: 5px;
+    border-radius: 5px;
+}
+.main_actions .sort_action span {
+    font-size: medium;
+}
+
+.pagination {
+    padding: 5px 2%;
+}
+.movie_item .movie_title a:link {
+    color: #136cc2;
+}
+.movie_item .movie_title a:visited {
+    color: #136cc2;
+}
+.movie_item .movie_title a:hover {
+    color: #4c4cff;
+}
+.movie_item .movie_title a:active {
+    color: #136cc2;
+}
+
+.movie_item .director_name,
+.movie_item .actor_1_name,
+.movie_item .actor_2_name {
+    color: #136cc2;
+}
+
+.movie_item .plot_keywords {
+    margin: 8px 0;
+}
+
+#dummy_node {
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .main_search_bar {
+        width: 90%;
+    }
+}

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Movies Search</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="progress_bar" id="movie_list_progress">
+        <progress value="22" max="100" id="movie_list_progress_bar"></progress>
+        <br>
+        <span  id="movie_list_progress_percent">Loading data...</span>
+    </div>
+    
+    <div class="loading_icon" id="loading_icon"></div>
+    
+    <header class="main_header">
+        Movie Search
+    </header>
+
+    <article class="main_content">
+
+        <section class="main_search_bar">
+            <input type="text" placeholder="Search" id="search_input"/>
+        </section>
+
+        <section class="main_actions">
+
+            <div class="filter_action">
+                <div><b>Filter by :</b></div>
+                <span id="language_filter">
+                    Language<br>
+                </span>
+                
+                <br>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="pagination">
+            <input type="button" value="Prev" id="prev_btn"/>
+            <input type="button" value="Next" id="next_btn" />
+        </section>
+
+        <div class="movie_item" id="dummy_node" >
+            <div class="movie_title">
+                <a href="http://starlord.hackerearth.com/movieslisting">
+                    <b class="title_name">
+                        1. Movie Title (2007)
+                    </b>
+                </a>
+            </div>
+            <span class="movie_genre">content_rating, genres</span>
+            <p class="plot_keywords">
+                plot_keywords
+            </p>
+            <span class="director">Director:</span>
+            <span class="director_name">director_name</span>
+            <span class="actors"> | </span>
+            <span class="actors">Actors:</span>
+            <span class="actor_1_name">actor_1_name</span>,
+            <span class="actor_2_name">actor_2_name</span>
+        </div>
+
+        <section class="movie_list" id="movie_list">
+        </section>
+    </article>
+
+    <footer class="main_footer">
+        <span>Connect with us </span>
+        <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" width="25" height="25" />
+        <img src="https://image.winudf.com/v2/image/Y29tLmZhY2Vib29rLmthdGFuYV9pY29uXzE1MzQzODM5OTBfMDkw/icon.png?w=170&fakeurl=1&type=.png" width="25" height="25" />
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
