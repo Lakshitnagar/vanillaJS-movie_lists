@@ -63,7 +63,7 @@
     }
 
     function responseAction(res) {
-        movieList = res;
+        movieList = res.movieList;
 
         updateMovieList(movieList, true);
     }
