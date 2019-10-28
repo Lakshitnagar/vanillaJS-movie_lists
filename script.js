@@ -36,7 +36,7 @@
         }
     };
 
-    Request.open("GET", "http://starlord.hackerearth.com/movieslisting");
+    Request.open("GET", "movieslisting.json");
 
     Request.send();
 
